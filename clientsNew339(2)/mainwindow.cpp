@@ -80,10 +80,6 @@ MainWindow::MainWindow(QWidget *parent)
          ui->textBrowser->append(message);
     });
 
-    connect(ui->pushButton,&QPushButton::clicked,
-            [&] () {
-        qInfo() << user->sendTextMessage(("<"+nickName+">" +ui->lineEdit->text()).toUtf8());
-    });
 
 
     /*for (int i=0; i<100; i++){
